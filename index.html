@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards3</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10%;
+    
+    }
+   main{
+    display: grid;
+    place-items: center;
+    height: 350px;
+    width: 270px;
+    background-image: url("https://cdn.pixabay.com/photo/2023/11/16/05/02/mountains-8391433_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+    box-shadow: 1rem trem 5rem #373e12;
+    transition: 2s ease;
+    overflow: hidden;
+   }
+
+   main > *{
+    grid-area: 1/1;
+   }
+   img{
+    height: 350px;
+    width: 270px;
+    clip-path: inset(15% 47% 15% 47% round 0rem 0rem);
+    transition: 1.5s ease;
+   }
+   main:hover img{
+    clip-path: inset(0% 0% 0% 0% round .5rem .5rem);
+    transition: 2s ease;
+   }
+   h2{
+    font-size: 2.5rem;
+    transition: 3s ease;
+    z-index: 18;
+    color: #0c0c0c;
+   }
+   h2:nth-child(2)
+   {
+    font-weight: 400;
+    opacity: 0;
+   }
+   main:hover h2:nth-child(1)
+   {
+    opacity: 0;
+   }
+   main:hover h2:nth-child(2)
+   {
+    color: #080808;
+    transition-delay: 1.5s;
+    opacity: 1;
+   }
+  
+  </style>
+</head>
+<body>
+  <main>
+  <h2>Beauty</h2>
+  <h2>And beast</h2>
+  <img src="https://cdn.pixabay.com/photo/2023/11/16/05/02/mountains-8391433_1280.jpg" alt="">
+  </main>
+</body>
+</html>
